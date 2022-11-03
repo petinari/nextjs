@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./styles.module.css";
+import SearchIcon from './Vector.svg'
 
 type Props = {
   mainColor: string;
@@ -23,7 +24,9 @@ export const SearchInput = ({ mainColor, onSearch }: Props) => {
       <div
         className={styles.button}
         onClick={() => onSearch(searchValue)}
-      ></div>
+      >
+        <SearchIcon color={mainColor}></SearchIcon>
+      </div>
       <input
         placeholder="Digite o nome produto..."
         type="text"

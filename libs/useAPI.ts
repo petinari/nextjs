@@ -6,7 +6,7 @@ export type getTenantResponse = {
 
 export const useApi = () => ({
   getTenant: (tenantSlug: string): boolean | getTenantResponse => {
-    console.log("useapi - " + tenantSlug);
+    console.log("useapi" + tenantSlug);
     switch (tenantSlug) {
       case "b7burger":
         return {
