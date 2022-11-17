@@ -6,7 +6,7 @@ export const Header = () => {
     return(
         <div className={styles.container}>
             <div className={styles.leftSide}>
-                <Link href={'uol.com.br'}>
+                <Link href={''}>
                    
                 </Link>
             </div>
