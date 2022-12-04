@@ -16,7 +16,7 @@
   color: rgba(27, 27, 27, 0.8);
   text-align: center;
   margin: auto;
-  width: 223px;
+  width: 220px;
   padding-bottom: 40px;
   border-bottom: 1.5px solid black;
   position: relative;
@@ -41,7 +41,6 @@
   width: fit-content;
   position: relative;
   padding-bottom: 62px;
-  border-bottom: 1.5px solid black;
 }
 
 .forgetarea a {
