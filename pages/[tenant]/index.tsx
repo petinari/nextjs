@@ -19,7 +19,7 @@ const Home = (data: Props) => {
       <header className={styles.header}>
         <div className={styles.headerTop}>
           <div className={styles.headerTopLeft}>
-            <div className={styles.headerTitle}>Seja Bem Vindo (a)! 👋🏻</div>
+            <div className={styles.headerTitle}>Seja Bem Vindo (a)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 👋🏻</div>
             <div className={styles.headerSubTitle}>O que deseja para hoje?</div>
           </div>
           <div className={styles.headerTopRight}>
