@@ -4,22 +4,24 @@ import { Banner } from "../../components/Banner";
 import { ProductItem } from "../../components/ProductItem";
 import { SearchInput } from "../../components/SearchInput";
 import { useAppContext } from "../../contexts/AppContext";
-import {  useApi } from "../../libs/useAPI";
+import { useApi } from "../../libs/useAPI";
 
 import styles from "../../styles/Home.module.css";
 import { Tenant } from "../../types/Tenant";
 
 const Home = (data: Props) => {
-  const {tenant, setTenant} = useAppContext();
+  const { tenant, setTenant } = useAppContext();
 
-  useEffect(()=> {setTenant(data.tenant), []})
+  useEffect(() => {
+    setTenant(data.tenant), [];
+  });
 
   return (
     <div className={styles.container}>
       <header className={styles.header}>
         <div className={styles.headerTop}>
           <div className={styles.headerTopLeft}>
-            <div className={styles.headerTitle}>Seja Bem Vindo (a)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 👋🏻</div>
+            <div className={styles.headerTitle}>Seja Bem Vindo (a)! 👋🏻</div>
             <div className={styles.headerSubTitle}>O que deseja para hoje?</div>
           </div>
           <div className={styles.headerTopRight}>
@@ -40,10 +42,7 @@ const Home = (data: Props) => {
           </div>
         </div>
         <div className={styles.headerBottom}>
-          <SearchInput
-           
-            onSearch={() => null}
-          ></SearchInput>
+          <SearchInput onSearch={() => null}></SearchInput>
         </div>
       </header>
       <Banner />
@@ -56,7 +55,6 @@ const Home = (data: Props) => {
             name: "Old Burger",
             price: "25,50",
           }}
-         
         ></ProductItem>
         <ProductItem
           data={{
@@ -66,7 +64,6 @@ const Home = (data: Props) => {
             name: "Old Burger",
             price: "25,50",
           }}
-         
         ></ProductItem>
         <ProductItem
           data={{
@@ -76,7 +73,6 @@ const Home = (data: Props) => {
             name: "Old Burger",
             price: "25,50",
           }}
-        
         ></ProductItem>
       </div>
     </div>
